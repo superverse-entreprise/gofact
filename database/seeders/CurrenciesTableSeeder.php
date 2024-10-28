@@ -473,10 +473,11 @@ class CurrenciesTableSeeder extends Seeder
             [
                 'name' => 'Tunisian Dinar',
                 'code' => 'TND',
-                'symbol' => '‎د.ت',
-                'precision' => '2',
-                'thousand_separator' => ',',
+                'symbol' => 'TND',
+                'precision' => '3',
+                'thousand_separator' => ' ',
                 'decimal_separator' => '.',
+                'swap_currency_symbol' => true,
             ],
             [
                 'name' => 'Russian Ruble',

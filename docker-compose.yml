@@ -26,10 +26,10 @@ services:
       # and uncomment the line under this one.
       #- ./docker-compose/db/data:/var/lib/mysql:rw,delegated
     environment:
-      MYSQL_USER: crater
-      MYSQL_PASSWORD: crater
-      MYSQL_DATABASE: crater
-      MYSQL_ROOT_PASSWORD: crater
+      MYSQL_USER: gofact_owner
+      MYSQL_PASSWORD: fKt6YAscrPVq
+      MYSQL_DATABASE: gofact
+      MYSQL_ROOT_PASSWORD: fKt6YAscrPVq
     ports:
       - '33006:3306'
     networks:
@@ -39,7 +39,7 @@ services:
     image: nginx:1.17-alpine
     restart: unless-stopped
     ports:
-      - 80:80
+      - 8005:80
     volumes:
       - ./:/var/www
       - ./docker-compose/nginx:/etc/nginx/conf.d/
